@@ -9,7 +9,7 @@
 <p> The HTML element is everything from the start tag to the end tag </p>
 <h4 style="color:red;"><xmp> <tagname> Content here... </tagname> </xmp></h4>
 <h3> Root element </h3>
-<p><xmp> root element defines the whole HTML document.start with tag <html> and end with tag </html></xmp> <xmp>then inside root element is <body> element.</xmp></p>
+<p><xmp> root element เป็น tag ที่ทุกไฟล์ HTML ต้องมีจะเริ่มต้นด้วย tag <html> และจบด้วย tag </html></xmp> <xmp> ส่วนภายใน tag จะเก็บส่วน <body> element เอาไว้.</xmp></p>
 <h3> Example </h3>
 <xmp style="color:MediumBlue;"> <html>
     .
@@ -17,7 +17,7 @@
     .
  </html></xmp>
 <h3> Body element </h3>
-<p><xmp> body element will defines the doccument's body. it start with tag <body> and end with tag </body></xmp> <xmp>then inside body element there are two other element <h1> and <p>.</xmp></p>
+<p><xmp> body element ทำหน้าที่บอกว่าส่วนภายในแท็กเป็นส่วนของเนื้อหาจะเริ่มต้นด้วย tag <body> และจบด้วย tag </body></xmp> <xmp>ส่วนภายใน body element จะเก็บ element ได้อีกสองประเภทคือ <h1> และ <p>.</xmp></p>
 <h3> Example </h3>
 <xmp style="color:MediumBlue;"> <html>
   <body>
@@ -27,7 +27,7 @@
   </body>
  </html></xmp>
 <h3> Heading element </h3>
-<p><xmp> The <h1> element defines a heading.it start with tag <h1> and an end with tag </h1> and we can change number behide character h for change front size </xmp></p>
+<p><xmp>  <h1> element คือแท็กที่เอาไว้เก็บข้อมูลที่เป็นหัวข้อเรื่อง(Heading)จะเริ่มต้นด้วย tag <h1> และจบด้วย tag </h1> โดยเราสามารถทำการเปลี่ยนตัวเลขหลังตัว h ได้โดยตัวเลขยิ่งน้อยก็จะยิ่งทำให้หัวข้อมีขนาดตัวอักษารที่ใหญ่ขึ้นและสีเข้มขึ้น </xmp></p>
 <h3> Example </h3>
 <xmp style="color:MediumBlue;"> <html>
   <body>
@@ -39,7 +39,7 @@
 <h3> Solution </h3>
 <h1>-text-</h1>
 <h3> Paragraph element </h3>
-<p><xmp> The <p> element defines a paragraph.It start with tag <p> and end with tag </p> </xmp></p>
+<p><xmp> <p> element คือแท็กที่เอาไว้เก็บข้อมูลที่เป็นส่วนเนื้อหาที่ไม่ได้ต้องการการเน้นข้อความเหมือนหัวข้อเรื่องจะเริ่มต้นด้วย <p> และจบด้วย tag </p> </xmp></p>
 <h3> Example </h3>
 <xmp style="color:MediumBlue;"> <html>
   <body>
@@ -51,10 +51,10 @@
 <h3> Solution </h3>
 <p>-text-</p>
 <h2>HTML Attribute</h2>
-<p> -All HTML elements can have attributes<br> -Attributes provide additional information about elements<br> -Attributes are always specified in the start tag<br> -Attributes usually come in name/value pairs like: name="value"
+<p> -HTML elements ทุกอันสามารถมี attributes ได้<br> -Attributes ทำหน้าที่บอกลักษณะของ element นั้น ๆ<br> -Attributes จะอยู่ใน tag เปิด<br> -Attributes ส่วนใหญ่จะอยู่ในรูปแบบ name="value"
 </p>
 <h3> The href Attribute </h3>
-<p><xmp> The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to</xmp></p>
+<p><xmp> <a> tag ทำหน้าที่เก็บลิ้ง URL ตามที่ผู้ใช้ต้องการได้</xmp></p>
 <h3> Example </h3>
 <xmp style="color:MediumBlue;"> <html>
   <body>
@@ -63,11 +63,11 @@
      .
   </body>
  </html></xmp>
-<h3> Solution </h3>
+<h3> Solution </h3> 
 <a href="https://kantinun.github.io/">Visit my website</a>
 <h3> The src Attribute </h3>
-<p><xmp> The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed</xmp>
-There are two ways to specify the URL in the src attribute<br>1. Absolute URL - Links to an external image that is hosted on another website.</p>
+<p><xmp> <img> tag ทำให้เราสามารถใส่รูปภาพบนหน้าเว็บของเราได้โดยที่ src attribute จะทำหน้าที่เก็บ path ของรูปภาพที่เราต้องการนำมาแสดง</xmp>
+โดยที่เรามีวิธีการในการใส่ path ให้แก่ src attribute ได้ 2 รูปแบบ<br>1. Absolute URL - ใส่ลิ้ง URL ของรูปภาพที่เรานำมาจากเว็บอื่น</p>
 <h4 style="color:red;"><xmp> <img src = "URL your image"> </xmp></h4>
 <h3> Example </h3>
 <xmp style="color:MediumBlue;"> <html>
@@ -79,7 +79,7 @@ There are two ways to specify the URL in the src attribute<br>1. Absolute URL - 
  </html></xmp>
 <h3> Solution </h3>
 <img src="https://i.pinimg.com/564x/65/35/f2/6535f2813897442d48b3d0031d27e45b.jpg">
-<p>2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name.</p>
+<p>2. Relative URL - ใส่ชื่อรูปภาพซึ่งต้องมีรูปภาพอยู่ในเครื่องหรือ server ที่เก็บข้อมูลหน้าเว็บไซต์ไว้</p>
 <h4 style="color:red;"><xmp> <img src = "your image name.jpg"> </xmp></h4>
 <h3> Example </h3>
 <xmp style="color:MediumBlue;"> <html>
@@ -92,11 +92,11 @@ There are two ways to specify the URL in the src attribute<br>1. Absolute URL - 
 <h3> Solution </h3>
 <img src="meow.jpg">
 <h3> The width and height Attributes </h3>
-<p><xmp> The <img> tag should also contain the width and height attributes, which specifies the width and height of the image </xmp></p>
+<p><xmp> <img> tag สามารถเก็บ width และ height attributes ซึ่งจะทำหน้าที่ในการกำหนดขนาดรูปภาพที่นำมาแสดงบนหน้าเว็บไซต์เรา </xmp></p>
 <h3> Example </h3>
 <xmp style="color:MediumBlue;"> <html>
   <body>
-     <img src="https://i.pinimg.com/564x/a3/4f/c1/a34fc1cd2917e507d940b1bf570fa42d.jpg" width="500" height"600">
+     <img src="https://i.pinimg.com/564x/a3/4f/c1/a34fc1cd2917e507d940b1bf570fa42d.jpg" width="300" height"300">
      .
      .
   </body>
