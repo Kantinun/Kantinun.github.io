@@ -96,19 +96,19 @@
 <h3> Example </h3>
 <xmp style="color:MediumBlue;"> <html>
   <body>
-     <img src="https://i.pinimg.com/564x/a3/4f/c1/a34fc1cd2917e507d940b1bf570fa42d.jpg" width="300" height"300">
+     <img src="https://i.pinimg.com/564x/a3/4f/c1/a34fc1cd2917e507d940b1bf570fa42d.jpg" width="300" height="300">
      .
      .
   </body>
  </html></xmp>
  <h3> Solution </h3>
- <img src="https://i.pinimg.com/564x/a3/4f/c1/a34fc1cd2917e507d940b1bf570fa42d.jpg" width="300" height"300">
+ <img src="https://i.pinimg.com/564x/a3/4f/c1/a34fc1cd2917e507d940b1bf570fa42d.jpg" width="150" height="200">
 
 <h1> JavaScript Introduction </h1>
 <h3>What is JavaScript can do in HTML ? </h3>
 <p>1. JavaScript สามารถเปลี่ยนเนื้อหาใน element<br>2. JavaScript สามารถเปลี่ยนค่าของ Attribute ได้</p>
 <h3>How to use JavaScript in HTML ? </h3>
-<p>การที่เราจะใช้ code JavaScript ใน HTML นั้นเราจะใส่ code ภายใน tag <xmp style="color:red;"><span><script> ..Code.. </script> </xmp></p>
+<p>การที่เราจะใช้ code JavaScript ใน HTML นั้นเราจะใส่ code ภายใน tag <xmp style="color:red;"><script> ..Code.. </script> </xmp></p>
 <xmp>โดยที่เราสามารถใส่ tag <script> ไว้ใน tag <head> หรือ <body> ก็ได้ </xmp>
 <h3> Example </h3>
 <xmp style="color:MediumBlue;"> <html>
@@ -132,5 +132,54 @@
         .
    }
  </html></xmp>
+<h3>JavaScript Display Possibilities</h3>
+<p>1.ใช้คำสั่ง innerHTML </p>
+<h4 style="color:red;"><xmp> document.getElementById(element ID).innerHTML = ...content... </xmp></h4>
+<h3> Example </h3>
+<xmp style="color:MediumBlue;"> <html>
+   <body>
+      <p id = "demo"></p>
+
+      <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript'">Try it</button>
+   </body>
+ </html></xmp>
+<h3> Solution </h3>
+<p id = "demo"></p>
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript'">Try it</button>
+<p>2.ใช้คำสั่ง document.write() </p>
+<h4 style="color:red;"><xmp> document.write(..content..);</xmp></h4>
+<h3> Example </h3>
+<xmp style="color:MediumBlue;"> <html>
+   <body>
+      <button type="button" onclick="document.write('Hello JavaScript')">Try it</button>
+   </body>
+ </html></xmp>
+<h3> Solution </h3>
+<button type="button" onclick="document.write('Hello JavaScript')">Try it</button>
+<p style="color:red;">***warning*** ถ้าหากเราเรียกใช้ Method document.write() หลังจากที่หน้า HTML โหลดเสร็จแล้วหน้าเว็บไซต์ที่โหลดมาจะถูกลบและแสดงเฉพาะผลลัพธ์ของ Method ***warning***</p>
+<p>3.ใช้คำสั่ง window.alert() </p>
+<h4 style="color:red;"><xmp> window.alert(..content..);</xmp></h4>
+   <h3> Example </h3>
+   <xmp style="color:MediumBlue;"> <html>
+      <script>
+         window.alert("Hello JavaScript");
+      </script>
+ </html></xmp>
+<h3> Solution </h3>
+<img src="windowAlertSol.png" width="400" height="200"> 
+<p>4.ใช้คำสั่ง console.log() </p>
+<h4 style="color:red;"><xmp> console.log(..content..);</xmp></h4>
+<h3> Example </h3>
+<xmp style="color:MediumBlue;"> <html>
+   <script>
+      console.log("Hello JavaScript");
+   </script>
+ </html></xmp>
+<h3> Solution </h3>
+<script>
+   console.log("Hello JavaScript");
+</script>
+<img src="consoleSol.png" width="400" height="200"> 
+<p style="color:red;"> **วิธีการเปิด console ให้ทำการกด f12 และเลือกหมวด console**<p>
 </body>
 </html>
